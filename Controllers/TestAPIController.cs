@@ -13,6 +13,12 @@ namespace TestCICD.Controllers
             return Ok(new { message = "Test GET API is working!" });
         }
 
+        [HttpGet("getAwsCiCdStatus")]
+        public IActionResult Get()
+        {
+            return Ok(new { message = "CiCd Pipeline is working" });
+        }
+
         [HttpPost("post")]
         public IActionResult Post()
         {
