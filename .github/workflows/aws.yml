@@ -47,6 +47,9 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
 
+    - name: printing aws credentials from git hub secrets
+      run : echo "aws secrets $(secrets.AWS_ACCESS_KEY_ID)"
+
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
