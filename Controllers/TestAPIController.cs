@@ -14,7 +14,7 @@ namespace TestCICD.Controllers
         }
 
         [HttpGet("getAwsCiCdStatus")]
-        public IActionResult Get()
+        public IActionResult GetAwsCiCdStatus()
         {
             return Ok(new { message = "CiCd Pipeline is working" });
         }
